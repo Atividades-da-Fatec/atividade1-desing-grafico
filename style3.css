@@ -49,25 +49,34 @@ body{
     background: darkolivegreen;
 }
 
-.subtitulos{
+.separar{
     display: flex;
-    justify-content: space-between;
-    color: cornsilk;
-}
-
-.blocos{
-    border: 2px black;
+    justify-content:center;
+    gap: 6%;
 }
 
 .caixacontato{
     background-color: #4e1c02;
     border-radius: 25px;
-    margin-right: 76%;
-    padding: 2%;
+    padding: 5%;
     box-shadow: 0px 0px 30px 0px #4e1c02;
-    
+    display: flex;
+    flex-direction: column; 
+    color: cornsilk;
+    font-size: 100%;
 }
 
-.colortitulo{
+.caixacontato:hover{
+    box-shadow: 0px 0px 85px 0px #812f02 ;
+    background: #812f02;
+    color: rgb(241, 221, 141);
+}
+
+footer{
+    background-color: #4e1c02;
+    margin-top: 25%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
     color: cornsilk;
 }
