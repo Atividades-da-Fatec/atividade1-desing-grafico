@@ -14,22 +14,25 @@
     <header>
             <section class="blocosuperior">
 
-                <div>
-                    <figure>
-                        <img src="imagem/studio-tatto.png" width="90" height="90">
-                    </figure>
-                        
-                    <nav>
-                        <ul>
-                            <li> <a href="index.htm"> HOME </a></li>
-                            <li><a href="sobre.htm"> SOBRE </a></li>
-                            <li><a href="contato.htm"> CONTATO </a></li>
-                        </ul>
-                    </nav>  
-                </div>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <img class="navbar-brand" src="imagem/studio-tatto.png" width="90" height="90">
+        
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbar" aria-controls="conteudoNavbar" aria-expanded="false" aria-label="Alternar navegação">
+                                <span class="navbar-toggler-icon"></span>
+                             </button>
+                        <div class="collapse navbar-collapse" id="conteudoNavbar">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"> <a class="nav-link" href="index.htm">HOME</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="sobre.htm">SOBRE</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="contato.htm">CONTATO</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
 
                 <h1>
-                    TINTA E AÇO
+                    TINTA E AÇO 
                 </h1>
 
                 <h2>
@@ -57,34 +60,45 @@
             libero adipisci cupiditate architecto autem fugit, iusto tenetur provident?
         </p>
 
-        <section class="blocoinferior">
+        <br>
 
-            <div class="divfotos">
-                <h2> Suminagashi </h2>
-                <p>Estilo de tatuagem e arte tradicional japonesa</p>
-                <figure>
-                    <img src="imagem/suminagashi.jpeg" width="145" height="145" >
-                </figure>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                        <div class="card card-tatto">
+                            <img src="imagem/suminagashi.jpeg" class="card-img-top" width="140" height="225" >
+                            <div class="card-body">
+                                <h2 class="card-title"> Suminagashi </h2>
+                                <p></p>
+                                <p class="card-text">Estilo de tatuagem e arte tradicional japonesa</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                        <div class="card card-tatto">
+                            <img src="imagem/lacraia.jpeg" class="card-img-top" width="140" height="225" >
+                            <div class="card-body">
+                                <h2 class="card-title"> Lacraia </h2>
+                                <p></p>
+                                <p class="card-text">Tattto lacria no estilo old-school</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                        <div class="card card-tatto">
+                            <img src="imagem/espada.jpeg" class="card-img-top" width="140" height="225" >
+                            <div class="card-body">
+                                <h2 class="card-title"> ESPADA </h2>
+                                <p></p>
+                                <p class="card-text">Tatto de uma espada medieval com aranha e <br>
+                                sangue no estilo old-school </p>
+                            </div>
+                        </div>
+                </div>
+
             </div>
-
-            <div class="divfotos">
-                <h2>Lacraia </h2>
-                <p>Tattto lacria no estilo old-school</p> <br>
-                <figure>
-                    <img src="imagem/lacraia.jpeg" width="145" height="145">
-                </figure>
-            </div>
-
-            <div class="divfotos">
-                <h2>ESPADA</h2>
-                <p>Tatto de uma espada medieval com aranha e <br>
-                    sangue no estilo old-school</p>
-                <figure>
-                    <img src="imagem/espada.jpeg" width="145" height="145">
-                </figure>
-
-            </div>
-
         </section>
     </main>
     <footer>
