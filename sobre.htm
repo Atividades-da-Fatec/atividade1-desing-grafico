@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <header>
         <section class="blocosuperior">
-            <div class="topo">
-                <figure>
-                    <img src="imagem/studio-tatto.png" width="90" height="90">
-                </figure>
-                        
-                <nav>
-                    <ul>
-                        <li> <a href="index.htm"> HOME </a></li>
-                        <li><a href="sobre.htm"> SOBRE </a></li>
-                        <li><a href="contato.htm"> CONTATO </a></li>
-                    </ul>
-                </nav>  
-            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <img class="navbar-brand" src="imagem/studio-tatto.png" width="90" height="90">
+        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbar" aria-controls="conteudoNavbar" aria-expanded="false" aria-label="Alternar navegação">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="conteudoNavbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"> <a class="nav-link" href="index.htm">HOME</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="sobre.htm">SOBRE</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="contato.htm">CONTATO</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
             <h1>QUEM SOMOS?</h1>
             <p>CONHEÇA UM POUCO DA HISTORIA DO ESTUDIO TINTA E AÇO</p>
+
         </section>
 
         <section class="fotoestudio">
+
+            <div id="carouselTattoos" class="carousel slide">
+                <div class="carousel-inner redondar">
+                    <div class="carousel-item active">
+                        <img src="imagem/angulo1.png" class="d-block w-100" alt="..." >
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagem/angulo2.png" class="d-block w-100" alt="..." >
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagem/estudio-old.png" class="d-block w-100" alt="..." >
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTattoos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTattoos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
             <div class="texto-sobre">
                 <h2>Nossa historia</h2>
@@ -47,9 +80,7 @@
                 </P>
             </div>
 
-            <figure>
-                <img id="estilo" src="imagem/estudio-old.png" width="300" height="300">
-            </figure>
+            
 
         </section>
     </header>
@@ -59,5 +90,6 @@
             2026 estudio TINTA E AÇO - todos os direitos reservados
         </p>
     </footer>
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
