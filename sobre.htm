@@ -62,24 +62,40 @@
                 </button>
             </div>
 
-            <div class="texto-sobre">
-                <h2>Nossa historia</h2>
-                <p class="textocorpo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Perferendis libero quidem ex quis laudantium porro unde vel velit id, necessitatibus, accusamus hic <br>
-                    asperiores ducimus illo facere pariatur voluptatum? Accusamus, sunt! Lorem ipsum dolor sit amet <br> 
-                    consectetur adipisicing elit. Ratione labore corrupti dolores voluptate fugiat facilis, totam quam recusandae dolorem <br>
-                    numquam atque aliquam placeat cumque magnam
-                </p>
+            <div class="accordion" id="accordionSobre">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoHistoria">
+                        Nossa historia
+                        </button>
+                    </h2>
+                    <div id="colapsoHistoria" class="accordion-collapse collapse show" data-bs-parent="#accordionSobre">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Perferendis libero quidem ex quis laudantium porro unde vel velit id, necessitatibus, accusamus hic <br>
+                            asperiores ducimus illo facere pariatur voluptatum? Accusamus, sunt! Lorem ipsum dolor sit amet <br> 
+                            consectetur adipisicing elit. Ratione labore corrupti dolores voluptate fugiat facilis, totam quam recusandae dolorem <br>
+                            numquam atque aliquam placeat cumque magnam
+                        </div>
+                    </div>
+                </div>    
 
-                <h2>NOSSA FILOSOFIA</h2>
-                <P class="textocorpo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ab sed, excepturi <br>
-                    nulla assumenda est, nostrum quis suscipit, dolores illum repudiandae maiores <br>
-                    quod omnis nihil incidunt! Veniam odio ab amet.
-                </P>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoFilosofia">
+                            Nossa filosofia
+                        </button>
+                    </h2>
+                    <div id="colapsoFilosofia" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Nulla autem veniam doloribus ex sint consequuntur nesciunt <br>
+                            repellat odio, vero, dolorum enim ut. <br>
+                            Architecto necessitatibus tempora animi error ullam nemo quasi.
+                        </div>
+                    </div>
+                </div>
             </div>
-
             
 
         </section>

@@ -87,8 +87,9 @@ footer{
 
 .fotoestudio{
     display: grid;
-    justify-content: center;
-    /* grid-template-columns: 60% 40%; */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 2%;
 }
 
 .texto-sobre{
@@ -103,10 +104,35 @@ img#estilo{
 
 #carouselTattoos img {
     height: 400px;
-    width: 400px;
     object-fit: cover;
 }
 
 .redondar{
     border-radius: 20px;
+}
+
+.accordion-button {
+    background-color: #4e1c02;
+    color: cornsilk;
+    font-size: 130%;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #812f02;
+    color: rgb(241, 221, 141);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #4e1c02;
+}
+
+.accordion-body {
+    background-color: #4e1c02;
+    color: cornsilk;
+}
+
+.accordion-item {
+    background-color: #4e1c02;
+    border: none;
 }
