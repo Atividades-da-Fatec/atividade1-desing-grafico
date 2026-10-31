@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="secao-intro">
+    <h4>
+        Sobre nosso estudio TINTA E AÇO
+    </h4>
+
+    <p class="d-none d-sm-block p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo mollitia, consequatur perspiciatis culpa
+        totam unde sed exercitationem fugit commodi velit, a sunt quos voluptate hic? Amet, ratione culpa! Repellendus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+</section>
+
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card card-tatuagem">
+                <img src="{{url_for('static', filename='imagem/suminagashi.jpeg')}}" class="card-img-top" alt="Tatuagem no estilo Suminagashi">
+                <div class="card-body">
+                    <h2 class="card-title"> Suminagashi </h2>
+                    <p class="card-text">Estilo de tatuagem e arte tradicional japonesa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-tatuagem">
+                <img src="{{url_for('static', filename='imagem/lacraia.jpeg')}}" class="card-img-top" alt="Tatuagem de lacraia old school">
+                <div class="card-body">
+                    <h2 class="card-title"> Lacraia </h2>
+                    <p class="card-text">Tattto lacria no estilo old-school</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-tatuagem">
+                <img src="{{url_for('static', filename='imagem/espada.jpeg')}}" class="card-img-top" alt="Tatuagem de espada medieval com aranha">
+                <div class="card-body">
+                    <h2 class="card-title"> ESPADA </h2>
+                    <p class="card-text">Tatto de uma espada medieval com aranha old-school </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

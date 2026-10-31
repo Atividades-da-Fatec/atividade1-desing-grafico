@@ -1,0 +1,262 @@
+:root {
+    --verde: #6b8b43;           /* fundo da página */
+    --marrom: #3a2012;          /* blocos, cards e rodapé */
+    --contorno: #1a0f08;        /* traço grosso, estilo tatuagem */
+    --creme: #f3e3b8;           /* texto sobre marrom */
+    --mostarda: #e0a526;        /* destaque: título, links, botão */
+    --vermelho: #b3342a;        /* hover dos cards */
+    --texto-pagina: #1a0f08;    /* texto direto sobre o verde */
+
+    --fonte-titulo: "Alfa Slab One", "Rockwell", Georgia, serif;
+    --fonte-texto: "Work Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+    --raio: 20px;
+    --borda: 3px solid var(--contorno);
+    --sombra: 6px 6px 0 var(--contorno);  
+}
+
+/* ==========================================================
+   BASE
+   ========================================================== */
+body {
+    background-color: var(--verde);
+    color: var(--texto-pagina);
+    font-family: var(--fonte-texto);
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    color: inherit; 
+}
+
+h1, h2, h4 {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+}
+
+h1 { font-size: clamp(2rem, 8vw, 3rem); letter-spacing: 0.02em; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1rem; font-weight: 600; }
+h4 { font-size: 1.75rem; }
+p  { font-size: 1.1rem; }
+
+a {
+    text-decoration: none;
+    color: var(--creme);
+}
+
+/* ==========================================================
+   CABEÇALHO E MENU
+   ========================================================== */
+.bloco-superior {
+    max-width: 95%;
+    margin: 2% auto;
+    padding: 20px;
+    border-radius: var(--raio);
+}
+
+.bloco-superior h1 { color: var(--mostarda); }
+.bloco-superior h2 { margin-top: 0.5rem; }
+.bloco-superior h3 { margin-top: 0.75rem; }
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.navbar-nav .nav-item {
+    background-color: var(--contorno);
+    border: 2px solid var(--mostarda);
+    border-radius: 8px;
+    padding: 0 6px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--creme);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--mostarda);
+}
+
+.bloco-superior,
+.card-tatuagem,
+.caixa-contato,
+.formulario-contato,
+footer {
+    background-color: var(--marrom);
+    color: var(--creme);
+    border: var(--borda);
+    box-shadow: var(--sombra);
+}
+
+.card-tatuagem,
+.caixa-contato,
+.formulario-contato {
+    border-radius: 25px;
+}
+
+.card-tatuagem:hover,
+.caixa-contato:hover {
+    background-color: var(--vermelho);
+}
+
+/* ==========================================================
+   PÁGINA HOME
+   ========================================================== */
+.secao-intro {
+    padding: 30px 0 80px;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+.card-tatuagem {
+    overflow: hidden; 
+}
+
+.card-tatuagem img {
+    height: 258px;
+    object-fit: cover; /* corta a foto em vez de esticar */
+    border-bottom: var(--borda);
+}
+
+
+/* ==========================================================
+   PÁGINA SOBRE
+   ========================================================== */
+.layout-sobre {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 2%;
+}
+
+.carrossel-estudio .carousel-inner {
+    border: var(--borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+.carrossel-estudio img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.accordion {
+    border: var(--borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+}
+
+.accordion-item {
+    background-color: var(--marrom);
+    border: none;
+}
+
+.accordion-item + .accordion-item {
+    border-top: var(--borda);
+}
+
+.accordion-button {
+    background-color: var(--marrom);
+    color: var(--creme);
+    font-size: 1.3rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--vermelho);
+    color: var(--creme);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--contorno);
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+    background-color: var(--marrom);
+    color: var(--creme);
+}
+
+/* ==========================================================
+   PÁGINA CONTATO
+   ========================================================== */
+.layout-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: start;
+    padding: 0 3.5%;
+}
+
+.grade-contatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.caixa-contato {
+    padding: 1.25rem 1.5rem;
+}
+
+.formulario-contato {
+    padding: 1.5rem;
+}
+
+.formulario-contato .form-control {
+    border: 2px solid var(--contorno);
+    border-radius: 8px;
+}
+
+.campo-descricao {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.btn-tatuagem {
+    background-color: var(--mostarda);
+    color: var(--contorno);
+    border: 2px solid var(--contorno);
+    border-radius: 8px;
+    font-weight: 700;
+    box-shadow: 3px 3px 0 var(--contorno);
+}
+
+.btn-tatuagem:hover {
+    background-color: var(--vermelho);
+    color: var(--creme);
+}
+
+footer {
+    width: 95%;
+    margin: 10% auto 2%;
+    padding: 14px 20px;
+    border-radius: var(--raio);
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .card-tatuagem {
+        margin-bottom: 25px;
+    }
+
+    .layout-contato {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+
+    .grade-contatos {
+        grid-template-columns: 1fr;
+    }
+}
